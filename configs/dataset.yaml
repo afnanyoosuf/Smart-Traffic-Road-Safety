@@ -1,0 +1,26 @@
+# Dataset configuration
+# Smart Traffic & Road Safety Analytics
+
+dataset:
+  name: BDD100K
+  task: vehicle_detection
+  source: public_dataset
+
+classes:
+  0: car
+  1: motorcycle
+  2: bus
+  3: truck
+  4: bicycle
+  5: person
+
+split:
+  train: 0.70
+  validation: 0.20
+  test: 0.10
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  annotations: data/annotations
