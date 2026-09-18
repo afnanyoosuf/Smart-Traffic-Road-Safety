@@ -17,9 +17,16 @@ __pycache__/
 *.onnx
 
 # Large datasets
-data/raw/
-data/processed/
+data/raw/*
+data/processed/*
+data/interim/*
+data/annotations/*
 
+# Keep dataset directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/interim/.gitkeep
+!data/annotations/.gitkeep
 # Generated outputs
 outputs/
 
